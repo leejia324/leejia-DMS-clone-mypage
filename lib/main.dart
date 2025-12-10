@@ -24,6 +24,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -307,10 +308,22 @@ class _MyHomePageState extends State<MyHomePage> {
         unselectedItemColor: Color(0xff767676),
         selectedItemColor: Colors.white,
         items: [
-          BottomNavigationBarItem(icon: Icon(Symbols.house, opticalSize: 24,), label: '홈'),
-          BottomNavigationBarItem(icon: Icon(Symbols.add_comment, opticalSize: 24,), label: '신청'),
-          BottomNavigationBarItem(icon: Icon(Symbols.double_arrow, opticalSize: 24,), label: '안내'),
-          BottomNavigationBarItem(icon: Icon(Symbols.person, opticalSize: 24,), label: '마이페이지'),
+          BottomNavigationBarItem(
+            icon: Icon(Symbols.house, opticalSize: 24),
+            label: '홈',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Symbols.add_comment, opticalSize: 24),
+            label: '신청',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Symbols.double_arrow, opticalSize: 24),
+            label: '안내',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Symbols.person, opticalSize: 24),
+            label: '마이페이지',
+          ),
         ],
       ),
     );
