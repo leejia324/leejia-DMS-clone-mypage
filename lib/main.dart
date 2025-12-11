@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:material_symbols_icons/material_symbols_icons.dart';
 import 'package:dms_clone_coding/apply/apply.dart';
 import 'package:dms_clone_coding/mypage/mypage.dart';
+import 'package:dms_clone_coding/meal/meal.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,12 +30,18 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
-  bool _lights = false;
+
+  final List<Widget> _screens = [
+    MealPage(),
+    ApplyPage(),
+    Text('data'),
+    MyPage()
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ApplyPage(),
+      body: _screens[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: (int index) {

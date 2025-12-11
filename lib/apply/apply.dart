@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:material_symbols_icons/material_symbols_icons.dart';
+import 'Components/button.dart';
 
 class ApplyPage extends StatefulWidget {
   const ApplyPage({super.key});
@@ -110,23 +111,7 @@ class _ApplyPageState extends State<ApplyPage>
                         ),
                         Padding(
                           padding: EdgeInsets.only(top: 10),
-                          child: Container(
-                            width: 310,
-                            height: 50,
-                            decoration: BoxDecoration(
-                              color: Color(0xff008dff),
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                            child: Center(
-                              child: Text(
-                                '잔류 신청하기',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w900,
-                                ),
-                              ),
-                            ),
-                          ),
+                          child: Button(text: "잔류 신청하기"),
                         ),
                       ],
                     ),
@@ -181,23 +166,7 @@ class _ApplyPageState extends State<ApplyPage>
                         ),
                         Padding(
                           padding: EdgeInsets.only(top: 10),
-                          child: Container(
-                            width: 310,
-                            height: 50,
-                            decoration: BoxDecoration(
-                              color: Color(0xff008dff),
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                            child: Center(
-                              child: Text(
-                                '외출 신청하기',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w900,
-                                ),
-                              ),
-                            ),
-                          ),
+                          child: Button(text: "외출 신청하기"),
                         ),
                       ],
                     ),
@@ -252,23 +221,7 @@ class _ApplyPageState extends State<ApplyPage>
                         ),
                         Padding(
                           padding: EdgeInsets.only(top: 10),
-                          child: Container(
-                            width: 310,
-                            height: 50,
-                            decoration: BoxDecoration(
-                              color: Color(0xff008dff),
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                            child: Center(
-                              child: Text(
-                                '봉사 신청하기',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w900,
-                                ),
-                              ),
-                            ),
-                          ),
+                          child: Button(text: "잔류 신청하기"),
                         ),
                       ],
                     ),
