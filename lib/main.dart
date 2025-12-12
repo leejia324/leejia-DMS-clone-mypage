@@ -1,3 +1,4 @@
+import 'package:dms_clone_coding/guide/guide.dart';
 import 'package:flutter/material.dart';
 import 'package:material_symbols_icons/material_symbols_icons.dart';
 import 'package:dms_clone_coding/apply/apply.dart';
@@ -34,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final List<Widget> _screens = [
     MealPage(),
     ApplyPage(),
-    Text('data'),
+    GuidePage(),
     MyPage()
   ];
 
